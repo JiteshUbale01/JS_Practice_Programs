@@ -3,7 +3,7 @@
  */
 
 const counter=(arr)=>{
-    let newArr=arr.filter(item=>item%2==0);
+    let newArr=arr.filter(item=>item%2===0);
     return newArr.length;
 };
 
