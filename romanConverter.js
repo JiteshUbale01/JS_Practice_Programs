@@ -16,42 +16,33 @@ const arabic={
     V:5,
     IV:4,
     I:1
-};
+}
 
 
-let romanConverter=(num)=>{
-    let romanNum='';
-    for(let item in arabic){
-        let current=arabic[item];
-        while(current<=num){
-            num-=current;
-            romanNum+=item;
+
+let converter=(num)=>{
+    let romanNumeral='';
+    for(let key in arabic){
+        let currentValue=arabic[key];
+        while(currentValue<=num){
+            num-=currentValue;
+            romanNumeral+=key;
         }
     }
-    return romanNum;
-};
+
+    return romanNumeral;
+}
 
 
-console.log(romanConverter(1000));
-console.log(romanConverter(2001));
-console.log(romanConverter(1921));
-console.log(romanConverter(1872));
-console.log(romanConverter(978));
-console.log(romanConverter(546));
-console.log(romanConverter(420));
-console.log(romanConverter(120));
-console.log(romanConverter(98));
-console.log(romanConverter(69));
-console.log(romanConverter(54));
-console.log(romanConverter(49));
-console.log(romanConverter(31));
-console.log(romanConverter(12));
-console.log(romanConverter(10));
-console.log(romanConverter(9));
-console.log(romanConverter(7));
-console.log(romanConverter(5));
-console.log(romanConverter(2));
-console.log(romanConverter(1));
+console.log(converter(1872));
+console.log(converter(1245));
+console.log(converter(1000));
+console.log(converter(971));
+console.log(converter(500));
+console.log(converter(420));
+console.log(converter(120));
+console.log(converter(100));
+console.log(converter(98));
 
 
 

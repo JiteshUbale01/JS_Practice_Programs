@@ -7,13 +7,21 @@
  */
 
 
-const myDate=(date=new Date())=>{
-    const days=date.getDate();
-    const months=date.getMonth()+1;
-    const years=date.getFullYear();
+const currentDate=(date=new Date())=>{
+    const day=date.getDate();
+    const month=date.getMonth()+1;
+    const year=date.getFullYear();
 
-    return `${days}/${months}/${years}`;
+    return `${day}/${month}/${year}`;
+}
 
-};
+console.log(currentDate());
 
-console.log(myDate());
+/**
+ * the ${} is used when we want to show the value of a variable to the user
+ * 
+ * the date object is used to generate date it has several methods which can be used to get
+ * date,day,minutes,seconds,milliseconds,year,month and many more
+ * 
+ * 
+ */

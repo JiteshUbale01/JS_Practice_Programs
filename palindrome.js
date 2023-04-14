@@ -1,16 +1,20 @@
-function palindromeChecker(str){
+
+/**Write a javascript program to check whether a given string is palindrome or not */
+
+
+function palindrome(str){
     let revStr=str.split('').reverse().join('');
 
     if(revStr===str){
-        return true;
+        return "It's a palindrome";
     }
     else{
-        return false;
+        return `It's not a palindrome`;
     }
-
 }
 
-console.log(palindromeChecker("jitesh"));
-console.log(palindromeChecker("eye"));
-console.log(palindromeChecker("madam"));
-console.log(palindromeChecker("huh"));
+
+console.log(palindrome("eye"));
+console.log(palindrome("jitesh"));
+console.log(palindrome("boat"));
+console.log(palindrome("madam"));
