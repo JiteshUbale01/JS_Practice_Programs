@@ -22,3 +22,6 @@ const remover=(arr,val)=>{
 console.log(remover([3,2,2,3],3));
 console.log(remover([0,1,2,2,3,0,4,2],2));
 console.log(remover([1,1,2,2,3,3,4,4,4,6,5,7,4,4,4,10],4));
+
+
+/**A problem by LEETCODE */
