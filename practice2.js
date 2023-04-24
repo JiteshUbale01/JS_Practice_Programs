@@ -60,7 +60,56 @@
 
 // console.log(romanConverter(89));
 
+/**Linked list implementation in js */
+
+//creating a user-defined data type called node
+class node{
+    constructor(data){
+        this.data=data;
+        this.next=null;
+    }
+}
+
+class linkedList{
+    constructor(){
+        this.head=null;
+    }
+
+    push(data){
+        // if(this.head===null){
+        //     return this.head=new node(data);
+        // }
+
+        if(!this.head){
+            return this.head=new node(data);
+        }
+
+        let current=this.head;
+
+        while(current.next){
+            current=current.next;
+        }
+        current.next=new node(data);
+    }
+
+    printList(){
+        let current=this.head;
+        while(current){
+            console.log(current.data);
+            current=current.next;
+        }
+    }
+
+    pop(){
+        
+    }
+}
 
 
+let l1=new linkedList();
+l1.push(10);
+l1.push(20);
+l1.push(30);
+l1.printList()
 
 
